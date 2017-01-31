@@ -8,7 +8,8 @@ import {
   RadioWidget,
   RangeWidget,
   SelectWidget,
-  StringWidget
+  StringWidget,
+  DateWidget
 } from './';
 
 import { WidgetRegistry } from '../widgetregistry';
@@ -27,7 +28,7 @@ export class DefaultWidgetRegistry extends WidgetRegistry {
     this.register('email', StringWidget);
     this.register('password', StringWidget);
     this.register('color', StringWidget);
-    this.register('date', StringWidget);
+    this.register('date', DateWidget);
     this.register('date-time', StringWidget);
     this.register('time', StringWidget);
 

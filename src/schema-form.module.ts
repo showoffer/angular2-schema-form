@@ -18,7 +18,8 @@ import {
   RadioWidget,
   RangeWidget,
   SelectWidget,
-  StringWidget
+  StringWidget,
+  DateWidget
 } from './defaultwidgets';
 import {
   DefaultWidget
@@ -41,6 +42,7 @@ import {
     RangeWidget,
     SelectWidget,
     StringWidget,
+    DateWidget,
   ],
   entryComponents: [
     FormElementComponent,
@@ -56,6 +58,7 @@ import {
     RangeWidget,
     SelectWidget,
     StringWidget,
+    DateWidget,
   ],
   exports: [
     FormComponent,
@@ -70,7 +73,8 @@ import {
     RadioWidget,
     RangeWidget,
     SelectWidget,
-    StringWidget
+    StringWidget,
+    DateWidget
   ]
 })
 export class SchemaFormModule {}

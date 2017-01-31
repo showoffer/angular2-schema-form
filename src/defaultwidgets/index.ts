@@ -7,5 +7,6 @@ export * from './radio/radio.widget';
 export * from './range/range.widget';
 export * from './select/select.widget';
 export * from './string/string.widget';
+export * from './date/date.widget';
 export * from './textarea/textarea.widget';
 export * from './defaultwidgetregistry';

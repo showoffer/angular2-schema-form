@@ -1,0 +1,24 @@
+<div class="widget form-group">
+    <label [attr.for]="id" class="horizontal control-label">
+    	{{ schema.title }}
+    </label>
+    <span *ngIf="schema.description" class="formHelp">{{schema.description}}</span>
+
+    <div class="input-group date">
+        <div class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </div>
+        <input
+            [name]="name"
+            [attr.readonly]="(schema.widget.id!=='color') && schema.readOnly?true:null"
+            class="form-control datepicker"
+            type="text"
+            [attr.id]="id"
+            [formControl]="control"
+            [attr.placeholder]="schema.placeholder"
+            [attr.disabled]="(schema.widget.id=='color' && schema.readOnly)?true:null"
+        >
+
+        <input *ngIf="(schema.widget.id==='color' && schema.readOnly)" [attr.name]="name" type="hidden" [formControl]="control">
+    </div>
+</div>

@@ -34,6 +34,7 @@ export class FormPropertyFactory {
         newProperty = new NumberProperty(this.schemaValidatorFactory, this.validatorRegistry, schema, parent, path);
       break;
       case 'string':
+      case 'date':
         newProperty = new StringProperty(this.schemaValidatorFactory, this.validatorRegistry, schema, parent, path);
       break;
       case 'boolean':
